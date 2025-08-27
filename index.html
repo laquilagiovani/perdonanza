@@ -28,7 +28,7 @@
     }
   }
 
-  /* Logo centrato visivamente sulla Porta Marrone */
+  /* Logo centrato */
   .logo-container {
     width: 100px;
     height: 100px;
@@ -38,7 +38,7 @@
     border: 3px solid #ffd700;
     box-shadow: 0 4px 12px rgba(0,0,0,0.35);
     position: absolute;
-    top: 75%; /* abbassato rispetto alla versione precedente */
+    top: 75%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
@@ -55,11 +55,11 @@
     display: block;
   }
 
-  /* Titolo sopra il logo, leggermente più basso */
+  /* Titolo */
   .title-container {
     position: absolute;
     left: 50%;
-    top: 38%; /* leggermente abbassato */
+    top: 38%;
     transform: translateX(-50%);
     text-align: center;
     z-index: 2;
@@ -72,7 +72,7 @@
     margin: 0;
   }
 
-  /* Pulsante centrato sulla trave */
+  /* Pulsante */
   .button-container {
     position: absolute;
     left: 50%;
@@ -105,7 +105,14 @@
     animation: pulse 0.3s ease;
   }
 
+  /* Mobile */
   @media (max-width: 600px) {
+    body {
+      background: 
+        linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
+        url('porta_santa_mobile.jpg') no-repeat center center;
+      background-size: cover;
+    }
     h1 {
       font-size: 1.8rem;
     }
@@ -117,14 +124,14 @@
     .logo-container {
       width: 70px;
       height: 70px;
-      top: 77%; /* anche in mobile più in basso */
+      top: 77%;
       transform: translate(-50%, -50%);
     }
     .logo-container img {
       width: 75%;
     }
     .title-container {
-      top: 33%; /* leggermente abbassato in mobile */
+      top: 33%;
     }
     .button-container {
       top: 54%;
@@ -134,17 +141,17 @@
 </head>
 <body>
 
-  <!-- Titolo sopra il logo, leggermente più basso -->
+  <!-- Titolo -->
   <div class="title-container">
     <h1>Perdonanza Celestiniana 2025</h1>
   </div>
 
-  <!-- Pulsante centrato sulla trave -->
+  <!-- Pulsante -->
   <div class="button-container">
     <a href="libretti.html" class="cta-button">Vai ai libretti</a>
   </div>
 
-  <!-- Logo centrato sulla Porta Marrone -->
+  <!-- Logo -->
   <div class="logo-container">
     <img src="logo_perdonanza.png" alt="Logo Perdonanza 2025" />
   </div>
