@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Perdonanza 2025</title>
+<style>
+  body {
+    background: 
+      linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
+      url('porta_santa.jpg') no-repeat center center;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    color: white;
+    position: relative;
+    height: 100vh;
+  }
+
+  @keyframes pulse {
+    0%, 100% {
+      transform: scale(1);
+      box-shadow: 0 0 8px rgba(255,255,255,0.3);
+    }
+    50% {
+      transform: scale(1.05);
+      box-shadow: 0 0 14px rgba(255,255,255,0.6);
+    }
+  }
+
+  /* Logo centrato visivamente sulla Porta Marrone */
+  .logo-container {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: white;
+    border: 3px solid #ffd700;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.35);
+    position: absolute;
+    top: 75%; /* abbassato rispetto alla versione precedente */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logo-container img {
+    width: 80%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+  }
+
+  /* Titolo sopra il logo, leggermente più basso */
+  .title-container {
+    position: absolute;
+    left: 50%;
+    top: 38%; /* leggermente abbassato */
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 2;
+  }
+
+  h1 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    text-shadow: 0 3px 8px rgba(0,0,0,0.6);
+    margin: 0;
+  }
+
+  /* Pulsante centrato sulla trave */
+  .button-container {
+    position: absolute;
+    left: 50%;
+    top: 52%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 2;
+  }
+
+  .cta-button {
+    display: inline-block;
+    background-color: #fff;
+    color: #222;
+    padding: 14px 0;
+    width: 250px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    animation: pulse 2.8s infinite;
+  }
+
+  .cta-button:hover {
+    background-color: #ffd700;
+    color: #000;
+  }
+
+  .cta-button:active {
+    animation: pulse 0.3s ease;
+  }
+
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 1.8rem;
+    }
+    .cta-button {
+      width: 180px;
+      font-size: 16px;
+      padding: 12px 0;
+    }
+    .logo-container {
+      width: 70px;
+      height: 70px;
+      top: 77%; /* anche in mobile più in basso */
+      transform: translate(-50%, -50%);
+    }
+    .logo-container img {
+      width: 75%;
+    }
+    .title-container {
+      top: 33%; /* leggermente abbassato in mobile */
+    }
+    .button-container {
+      top: 54%;
+    }
+  }
+</style>
+</head>
+<body>
+
+  <!-- Titolo sopra il logo, leggermente più basso -->
+  <div class="title-container">
+    <h1>Perdonanza Celestiniana 2025</h1>
+  </div>
+
+  <!-- Pulsante centrato sulla trave -->
+  <div class="button-container">
+    <a href="libretti.html" class="cta-button">Vai ai libretti</a>
+  </div>
+
+  <!-- Logo centrato sulla Porta Marrone -->
+  <div class="logo-container">
+    <img src="logo_perdonanza.png" alt="Logo Perdonanza 2025" />
+  </div>
+
+</body>
+</html>
